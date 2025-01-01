@@ -11,4 +11,4 @@ sqlalchemy == 2.0.36
 psycopg2 == 2.9.10
 pyarrow >= 17.0.0
 joblib  == 1.4.2
-psycopg2-binary
+psycopg2-binary==2.9.3
