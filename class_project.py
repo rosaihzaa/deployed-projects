@@ -246,16 +246,16 @@ def class_project():
                     file_name='Prediction.csv',
                     mime='text/csv'
             )
-            count_data = data_csv['prediction'].value_counts()
-            fig = px.pie(values=count_data,
+        count_data = data_csv['prediction'].value_counts()
+        fig = px.pie(values=count_data,
                          names=count_data.index,
                          color=count_data.index,
                          color_discrete_map={'Yes':'orange', 'No':'red'},
                          title='Prediction Results Response Deposito')
-            fig.update_layout(title_x=0.25)
+        fig.update_layout(title_x=0.25)
 
-            st.plotly_chart(fig)
-            st.markdown('''<p style='color:orange;'>Yes : The customer is likely to open a deposit account.</p>
+        st.plotly_chart(fig)
+        st.markdown('''<p style='color:orange;'>Yes : The customer is likely to open a deposit account.</p>
                             <p style='color:red;'>No : The customer is likely to reject opening a deposit account.</p>''', unsafe_allow_html=True)
 
 
