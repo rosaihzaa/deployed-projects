@@ -236,11 +236,11 @@ def class_project():
 
         data_csv['prediction'] = data_csv['prediction'].map({0:'No', 1:'Yes'})
 
-        if st.button('Predict File'):
-            column1, column2 = st.columns(2)
-            with column1:
-                    file_csv = data_csv.to_csv(index=False)
-                    st.download_button(
+    if st.button('Predict File'):
+        column1, column2 = st.columns(2)
+        with column1:
+            file_csv = data_csv.to_csv(index=False)
+            st.download_button(
                     label= 'Download Prediction Results',
                     data=file_csv,
                     file_name='Prediction.csv',
