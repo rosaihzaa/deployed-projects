@@ -237,26 +237,29 @@ def class_project():
         data_csv['prediction'] = data_csv['prediction'].map({0:'No', 1:'Yes'})
 
     if st.button('Predict File'):
-        column1, column2 = st.columns(2)
-        with column1:
-            file_csv = data_csv.to_csv(index=False)
-            st.download_button(
+        if upload != None:
+            column1, column2 = st.columns(2)
+            with column1:
+                file_csv = data_csv.to_csv(index=False)
+                st.download_button(
                     label= 'Download Prediction Results',
                     data=file_csv,
                     file_name='Prediction.csv',
                     mime='text/csv'
             )
-        count_data = data_csv['prediction'].value_counts()
-        fig = px.pie(values=count_data,
+            count_data = data_csv['prediction'].value_counts()
+            fig = px.pie(values=count_data,
                          names=count_data.index,
                          color=count_data.index,
                          color_discrete_map={'Yes':'orange', 'No':'red'},
                          title='Prediction Results Response Deposito')
-        fig.update_layout(title_x=0.25)
+            fig.update_layout(title_x=0.25)
 
-        st.plotly_chart(fig)
-        st.markdown('''<p style='color:orange;'>Yes : The customer is likely to open a deposit account.</p>
+            st.plotly_chart(fig)
+            st.markdown('''<p style='color:orange;'>Yes : The customer is likely to open a deposit account.</p>
                             <p style='color:red;'>No : The customer is likely to reject opening a deposit account.</p>''', unsafe_allow_html=True)
+        else:
+            st.markdown(':red[Please input correct file.]')
 
 
   
