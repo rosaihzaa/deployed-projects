@@ -27,5 +27,5 @@ with tab2:
     st.markdown('         ')
     st.markdown('         ')
     st.markdown('         ')
-    closing()
+    closing() 
     
