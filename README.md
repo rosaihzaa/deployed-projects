@@ -13,13 +13,10 @@
 ## 📍Installation
 1. Clone This Repository
    ```bash
-   git clone 
+   git clone https://github.com/rosaihzaa/streamlit-porto.git
 3. Install Dependencies
    ```bash
    pip install -r requirements.txt
 5. Run The Applications
    ```bash
    streamlit run bank_porto.py
- 
-
-
