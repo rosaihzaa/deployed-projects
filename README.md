@@ -5,8 +5,8 @@
   This section contains an introduction about my self, Rosa.
 ## 📍Projects
   This section includes explanations of various projects and the deployment of model predictions results.
-1. <b>Classification Project</b><br><br>
-   ![](Image%20Classfication.png)<br>
+1. <b>Classification Project</b><br>
+   ![](images/Image%20Classfication.png)<br>
    This project discusses customer responses to opening or declining a deposit and 
    performs deployment to predict <br> the response outcome using the XGBoostClassifier model.
    [Quick File](https://colab.research.google.com/drive/1pQA9UKL_DpwIcDsf9X7SDz-EIxvLDR97?usp=sharing) [Dataset](https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset)
