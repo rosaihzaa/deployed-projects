@@ -1,5 +1,5 @@
 # ⭐ Rosa's Portfolio in Data Science ⭐
- Rosa's protfolio is deployed on Streamlit and contains severals sections. [Streamlit link](https://project-rosa.streamlit.app/)
+ Rosa's portfolio is deployed on Streamlit and contains severals sections. [Streamlit link](https://project-rosa.streamlit.app/)
 
 ## 📍About Me
   This section contains an introduction about my self, Rosa.
