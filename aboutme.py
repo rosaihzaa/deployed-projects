@@ -56,6 +56,6 @@ def aboutme():
         unsafe_allow_html=True
     )
     
-    st.selectbox('** **',['Details','AWS Certified Cloud Practitioner'])
+    st.selectbox('** **',['Details','AWS Certified Cloud Practitioner']) 
 
 
