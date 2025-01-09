@@ -19,4 +19,3 @@
 5. Run The Applications
    ```bash
    streamlit run bank_porto.py
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/user/repo-name/blob/main/notebook.ipynb)
